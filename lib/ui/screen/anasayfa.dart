@@ -17,6 +17,12 @@ class _AnasayfaState extends State<Anasayfa> {
   bool aramaYapiliyorMu = false;
 
   @override
+  void initState() {
+    super.initState();
+    context.read<AnasayfaCubit>().todoYukle();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
