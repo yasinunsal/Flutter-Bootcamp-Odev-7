@@ -27,7 +27,7 @@ class _AnasayfaState extends State<Anasayfa> {
             context.read<AnasayfaCubit>().ara(aramaSonucu);
           },
         ) :
-        const Text("Kisiler"),
+        const Text("To Do Application"),
         actions: [
           aramaYapiliyorMu ?
           IconButton(onPressed: (){
